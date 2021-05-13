@@ -1,6 +1,17 @@
+body {
+    
+    background-image: url(img/background.jpg);
+    background-size: cover;
+
+}
+
 table{
 
     border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 tr{
@@ -11,7 +22,9 @@ tr{
 td {
     height: 133px;
     width: 133px;
-    border: 5px solid black;
+    border: 5px solid lightgray;
+    position: relative;
+    cursor: pointer;
 }
 
 tr:first-child td{
@@ -27,6 +40,27 @@ table tr:last-child td {
     border-bottom: 0;
   }
 
-  table tr td:last-child {
+table tr td:last-child {
     border-right: 0;
   }
+
+.shape {
+
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    top: 18px;
+    left: 18px;
+    right: 0;
+    bottom: 0;
+}
+
+.d-none {
+
+    display: none;
+}
+
+td:hover{
+
+    background-color: rgba(207, 226, 205, 0.7);
+}
