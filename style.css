@@ -2,15 +2,67 @@ body {
     
     background-image: url(img/background.jpg);
     background-size: cover;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.players {
+
+    display: flex;
+    font-size: 30px;
+    color: white;
+    padding-top: 100px;
+    font-family: sans-serif;
+    padding-bottom: 60px;
+    margin-left: 16px;
+    margin-right: 16px;
+
+}
+
+.player-inactive {
+
+    opacity: 0.5;
+}
+.player2 {
+
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+.line{
+
+    height: 10px;
+    background-color: rgba(168, 243, 49, 0.863);
+    width: 400px;
+    position: absolute;
+    transform: scaleX(0.0);
+    transform: scaleY(0.0);
+    transition: transform 225ms ease-in-out;
+}
+
+.make-vertical {
+
+    transform: scaleX(0.0);
+    
+}
+
+.players img{
+
+    width: 60px;
+    height: 60px;
+    margin-right: 16px;
+    
+
 
 }
 
 table{
 
     border-collapse: collapse;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
     
 }
 
