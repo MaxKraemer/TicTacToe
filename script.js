@@ -1,9 +1,9 @@
 let fields = [];
-
+let gameOver = false;
 let currentshape = 'mark';
 
 function fillField(id){
-    if (!fields[id]) {
+    if (!fields[id] && !gameOver) {
     
     if(currentshape == 'mark'){
         
@@ -56,7 +56,7 @@ function checkForWin(){
         document.getElementById('line-0').style.transform = 'scaleX(1)';
     }
     
-    if(fields[3] == fields[4] && fields[4] == fields[5] && fields[4]){
+    if(fields[3] == fields[4] && fields[4] == fields[5] && fields[3]){
         winner = fields[3];
         
         document.getElementById('line-1').style.transform = 'scaleX(1)';
@@ -72,7 +72,7 @@ function checkForWin(){
     if(fields[0] == fields[3] && fields[3] == fields[6] && fields[0]){
         winner = fields[0];
 
-        document.getElementById('line-3').style.transform =  'scaleX(1)';
+        document.getElementById('line-3').style.transform =  'rotate(90deg) scaleX(1)';
 
     }
     
@@ -105,6 +105,14 @@ function checkForWin(){
     if(winner){
 
         console.log('GEWONNEN', winner);
+        gameOver = true;
+        
+        setTimeout(function() {
+
+            document.getElementById('gameOver').classList.remove('d-none');
+            
+        },2000);
+        
     }
 
 
