@@ -160,3 +160,26 @@ td:hover{
 
     background-color: rgba(207, 226, 205, 0.7);
 }
+
+@media (max-width: 1000px) {
+
+   .player-inactive {
+
+    margin-left: 20px;
+   }
+
+   .shape {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 18px;
+    left: 9px;
+    right: 0;
+    bottom: 0;
+
+}
+
+    .line {
+
+        top: 471px;
+    }

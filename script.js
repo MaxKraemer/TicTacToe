@@ -106,14 +106,39 @@ function checkForWin(){
 
         console.log('GEWONNEN', winner);
         gameOver = true;
-        
+
         setTimeout(function() {
 
             document.getElementById('gameOver').classList.remove('d-none');
-            
-        },2000);
+            document.getElementById('restart').classList.remove('d-none');
+        },1000);
         
     }
 
 
+}
+
+function restart(){
+
+    gameOver = false;
+    fields = [];
+    document.getElementById('gameOver').classList.add('d-none');
+    document.getElementById('restart').classList.add('d-none');
+
+    for (let i = 0; i < 8; i++) {
+
+        document.getElementById('line-' +i).classList.add('d-none');
+   
+    }
+
+    for (let i = 0; i < 9; i++) {
+
+        document.getElementById('circle-' +i).classList.add('d-none');
+        document.getElementById('mark-' +i).classList.add('d-none');
+   
+    }
+
+    
+   
+    
 }
