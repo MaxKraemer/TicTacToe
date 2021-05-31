@@ -58,16 +58,13 @@ body {
 
 }
 
-.game-Over img{
+.game-Over {
 
     position: absolute;
-    width: 100%%;
-    left: 0px;
-    right: 0;
-    z-index: 2;
-    animation: zoomIn 225ms ease-in-out;
-
+    z-index: 3;
 }
+
+
 
 @keyframes zoomIn {
 
