@@ -1,7 +1,6 @@
 body {
     
-    background-image: url(img/background.jpg);
-    background-size: cover;
+    background-color: black;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -32,6 +31,7 @@ body {
     margin-left: 16px;
 }
 
+
 .line{
 
     height: 10px;
@@ -58,14 +58,13 @@ body {
 
 }
 
-.game-Over {
+.game-Over img{
 
     position: absolute;
-    width: 80%;
-    left: 44px;
+    width: 100%%;
+    left: 0px;
     right: 0;
     z-index: 2;
-    top: 35px;
     animation: zoomIn 225ms ease-in-out;
 
 }
@@ -163,23 +162,58 @@ td:hover{
 
 @media (max-width: 1000px) {
 
-   .player-inactive {
 
-    margin-left: 20px;
-   }
-
-   .shape {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    top: 18px;
-    left: 9px;
-    right: 0;
-    bottom: 0;
-
-}
-
-    .line {
-
-        top: 471px;
+       .shape {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 18px;
+        left: 9px;
+        right: 0;
+        bottom: 0;
+    
     }
+
+        .line {
+    
+            top: 471px;
+        }
+    
+        .players {
+            display: flex;
+            font-size: 30px;
+            color: white;
+            padding-top: 50px;
+            font-family: sans-serif;
+            padding-bottom: 60px;
+            margin-left: 16px;
+            margin-right: 16px;
+    
+        }
+
+        .restart-button {
+            border: 1px solid black;
+            border-radius: 5px;
+            font-family: sans-serif;
+            height: 50px;
+            width: 150px;
+            cursor: pointer;
+            background-color: limegreen;
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            bottom: 64px;
+        }
+
+        .game-Over {
+            position: absolute;
+            width: 80%;
+            left: 44px;
+            right: 0;
+            z-index: 2;
+            top: 271px;
+            animation: zoomIn 225ms ease-in-out;
+
+
+
+    
